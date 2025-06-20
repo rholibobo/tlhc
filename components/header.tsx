@@ -27,7 +27,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <span className="text-2xl font-bold text-primary">TLHC</span>
-            <span className="ml-2 text-sm text-gray-600 hidden sm:block">The Luxury Hotel Company</span>
+            {/* <span className="ml-2 text-sm text-gray-600 hidden sm:block">The Luxury Hotel Company</span> */}
           </Link>
 
           {/* Desktop Navigation */}
