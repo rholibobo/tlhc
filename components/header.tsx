@@ -1,48 +1,64 @@
-"use client"
+"use client";
 
-import { Menu, User, Phone } from "lucide-react"
-import Link from "next/link"
-import { useState } from "react"
+import { Menu, User, Phone } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
 
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { useMobile } from "@/hooks/use-mobile"
+} from "@/components/ui/dropdown-menu";
+import { useMobile } from "@/hooks/use-mobile";
+import Image from "next/image";
 
 export default function Header() {
-  const isMobile = useMobile()
-  const [showSearch, setShowSearch] = useState(false)
+  const isMobile = useMobile();
+  const [showSearch, setShowSearch] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-primary">TLHC</span>
-            {/* <span className="ml-2 text-sm text-gray-600 hidden sm:block">The Luxury Hotel Company</span> */}
+            <Image src="/logo.png" alt="logo" width={70} height={70} />
+
+            <span className="text-primary font-bold hidden sm:block">
+              The Luxury Hotel Company
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
           {!isMobile && (
             <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/rooms" className="text-gray-700 hover:text-primary font-medium">
+              <Link
+                href="/rooms"
+                className="text-gray-700 hover:text-primary font-medium"
+              >
                 Rooms & Suites
               </Link>
-              <Link href="/attractions" className="text-gray-700 hover:text-primary font-medium">
+              <Link
+                href="/attractions"
+                className="text-gray-700 hover:text-primary font-medium"
+              >
                 Attractions
               </Link>
-              <Link href="/about" className="text-gray-700 hover:text-primary font-medium">
+              <Link
+                href="/about"
+                className="text-gray-700 hover:text-primary font-medium"
+              >
                 About TLHC
               </Link>
-              <Link href="/contact" className="text-gray-700 hover:text-primary font-medium">
+              <Link
+                href="/contact"
+                className="text-gray-700 hover:text-primary font-medium"
+              >
                 Contact
               </Link>
             </nav>
@@ -100,7 +116,11 @@ export default function Header() {
                 </Link>
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="outline" size="icon" className="rounded-full">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="rounded-full"
+                    >
                       <Avatar className="h-8 w-8">
                         <AvatarImage
                           src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=32&q=80"
@@ -132,5 +152,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
