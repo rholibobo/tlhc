@@ -30,7 +30,7 @@ export default function Header() {
             <Image src="/logo.png" alt="logo" width={70} height={70} />
 
             <span className="text-primary font-bold hidden sm:block">
-              The Luxury Hotel Company
+              The Luxury Home Company
             </span>
           </Link>
 

@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import { BookingSearchForm } from "@/components/booking-search"
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-[600px] md:h-[700px]">
+        <section className="relative h-[800px] md:h-[700px]">
           <div className="absolute inset-0">
             <Image
               src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
@@ -36,51 +37,7 @@ export default function Home() {
             </p>
 
             {/* Booking Widget */}
-            <div className="w-full max-w-5xl bg-white rounded-lg p-6 shadow-2xl">
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Destination</label>
-                  <div className="relative">
-                    <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                    <Input
-                      placeholder="Kigali, Rwanda"
-                      className="pl-10 text-gray-900"
-                      defaultValue="Kigali, Rwanda"
-                      readOnly
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Check-in</label>
-                  <div className="relative">
-                    <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                    <Input type="date" className="pl-10 text-gray-900" />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Check-out</label>
-                  <div className="relative">
-                    <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                    <Input type="date" className="pl-10 text-gray-900" />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Guests</label>
-                  <div className="relative">
-                    <Users className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                    <Input placeholder="2 guests" className="pl-10 text-gray-900" />
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6 flex justify-center">
-                <Button size="lg" className="px-12 py-3 text-lg" asChild>
-                  <Link href="/rooms">
-                    <Search className="mr-2 h-5 w-5" />
-                    Check Availability
-                  </Link>
-                </Button>
-              </div>
-            </div>
+            <BookingSearchForm />
           </div>
         </section>
 
@@ -90,31 +47,29 @@ export default function Home() {
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">About TLHC</h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                The Luxury Hotel Company (TLHC) is Rwanda's premier hospitality brand, offering exceptional
-                accommodation experiences in the heart of Kigali. Our meticulously designed 2-bedroom apartment combine
-                modern luxury with authentic Rwandan hospitality, providing guests with an unforgettable stay.
+                The Luxury Home Company (TLHC) is the premier hospitality brand for tastefully furnished apartments, offering exceptional accommodation experiences in the heart of Kigali. Our meticulously designed 2-bedroom apartment combines modern luxury with authentic Rwandan hospitality, providing guests with an unforgettable stay.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Star className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Premium Quality</h3>
-                  <p className="text-gray-600">Luxury accommodations with attention to every detail</p>
+                  <h3 className="text-xl font-semibold mb-2">Prime Location</h3>
+                  <p className="text-gray-600">Situated in the highbrow Nyarutarama district, enjoy easy access to Kigali's top attractions and business hubs.</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <MapPin className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Prime Location</h3>
-                  <p className="text-gray-600">Located in the heart of Kigali's business district</p>
+                  <h3 className="text-xl font-semibold mb-2">Stunning Views</h3>
+                  <p className="text-gray-600">Wake up to breathtaking views of the picturesque Kigali Golf Course from your private balcony.</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Exceptional Service</h3>
-                  <p className="text-gray-600">24/7 concierge and personalized guest services</p>
+                  <h3 className="text-xl font-semibold mb-2">Spacious Living</h3>
+                  <p className="text-gray-600">Spread across 120 square meters, our apartment provides ample space for relaxation and comfort.</p>
                 </div>
               </div>
             </div>
@@ -263,21 +218,21 @@ export default function Home() {
                 {
                   city: "Lagos",
                   country: "Nigeria",
-                  status: "Coming 2024",
+                  status: "Coming 2026",
                   image:
                     "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
                 },
                 {
                   city: "Abuja",
                   country: "Nigeria",
-                  status: "Coming 2024",
+                  status: "Coming 2027",
                   image:
                     "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
                 },
                 {
                   city: "New York",
                   country: "USA",
-                  status: "Coming 2025",
+                  status: "Coming 2028",
                   image:
                     "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
                 },

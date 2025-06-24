@@ -77,15 +77,15 @@ export default function Footer() {
               </li>
               <li>
                 <span className="text-gray-300">Lagos, Nigeria</span>
-                <div className="text-sm text-gray-400">Coming 2024</div>
+                <div className="text-sm text-gray-400">Coming 2026</div>
               </li>
               <li>
                 <span className="text-gray-300">Abuja, Nigeria</span>
-                <div className="text-sm text-gray-400">Coming 2024</div>
+                <div className="text-sm text-gray-400">Coming 2027</div>
               </li>
               <li>
                 <span className="text-gray-300">New York, USA</span>
-                <div className="text-sm text-gray-400">Coming 2025</div>
+                <div className="text-sm text-gray-400">Coming 2028</div>
               </li>
             </ul>
           </div>
@@ -95,7 +95,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0">
-            <p className="text-sm text-gray-400">© 2024 TLHC - The Luxury Hotel Company. All rights reserved.</p>
+            <p className="text-sm text-gray-400">© 2025 TLHC - The Luxury Hotel Company. All rights reserved.</p>
             <div className="flex gap-4">
               <Link href="/privacy" className="text-sm text-gray-400 hover:text-primary transition-colors">
                 Privacy Policy

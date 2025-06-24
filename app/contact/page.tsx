@@ -175,15 +175,15 @@ export default function ContactPage() {
                       <div className="space-y-3 text-sm">
                         <div>
                           <p className="font-medium">Lagos, Nigeria</p>
-                          <p className="text-gray-600">Opening Q3 2024</p>
+                          <p className="text-gray-600">Opening Q3 2026</p>
                         </div>
                         <div>
                           <p className="font-medium">Abuja, Nigeria</p>
-                          <p className="text-gray-600">Opening Q4 2024</p>
+                          <p className="text-gray-600">Opening Q4 2027</p>
                         </div>
                         <div>
                           <p className="font-medium">New York, USA</p>
-                          <p className="text-gray-600">Opening 2025</p>
+                          <p className="text-gray-600">Opening 2028</p>
                         </div>
                       </div>
                     </CardContent>

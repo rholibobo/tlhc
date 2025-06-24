@@ -195,7 +195,7 @@ export default function RoomsPage() {
                 {
                   city: "Lagos",
                   country: "Nigeria",
-                  status: "Opening Q3 2024",
+                  status: "Opening Q3 2026",
                   description: "Luxury accommodations in Nigeria's commercial capital",
                   image:
                     "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
@@ -203,7 +203,7 @@ export default function RoomsPage() {
                 {
                   city: "Abuja",
                   country: "Nigeria",
-                  status: "Opening Q4 2024",
+                  status: "Opening Q4 2027",
                   description: "Premium stays in Nigeria's federal capital territory",
                   image:
                     "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
@@ -211,7 +211,7 @@ export default function RoomsPage() {
                 {
                   city: "New York",
                   country: "USA",
-                  status: "Opening 2025",
+                  status: "Opening 2028",
                   description: "Bringing African luxury hospitality to the Big Apple",
                   image:
                     "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
